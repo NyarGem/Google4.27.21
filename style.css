@@ -1,0 +1,108 @@
+p{
+    padding: 5px;}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1/8 fr);
+    width: 1200px;
+    height: 1200px;
+}
+
+.griditem1{
+    display: flex;
+    grid-area: 1/1/2/4;
+    align-items: center;
+}
+
+.griditem2{
+    display: flex;
+    grid-area: 1/18/2/21;
+    align-items: center;
+    justify-items: right;
+}
+
+.griditem3{
+    grid-area: 7/1/8/-1;
+    text-align: center;
+}
+
+.griditem4{
+    grid-area: 8/1/9/-1;
+    margin: auto;
+}
+
+.griditem5{
+    display: flex;
+    grid-area: 9/1/10/-1;
+    margin: auto;
+    gap: 10px;
+}
+
+.griditem6{
+    grid-area: 10/1/11/-1;
+    margin: auto;
+    font-size: 12px;
+}
+
+.griditem7{
+    display: grid;
+    grid-area: 50/1/21/21;
+    font-size: 10px;
+}
+.griditem8{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.griditem9{
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 15;
+    
+}
+
+.griditem10{
+    display: flex;
+    grid-column-start: 19;
+    grid-column-end: 21;
+}
+
+.searchstyle{
+    width: auto;
+    height: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.profilepic{
+    width: 35px;
+    height: 35px;
+    border: solid 2px red;
+    border-radius: 50%;
+}
+
+.leaf{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+input[type=button]{
+    background-color: lightgrey;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 1px 1px;
+    width: 130px;
+    height: 30px;
+}
+
+input[type=text]{
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2px 1px;
+    width: 500px;
+    height: 30px;
+}
